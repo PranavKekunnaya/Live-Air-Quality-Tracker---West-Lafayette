@@ -25,27 +25,41 @@ A Streamlit dashboard that fetches **real-time air quality data** from the **Ope
 
 ---
 
-## 🚀 Installation
+## 🚀 Installation & Running the App (Windows)
 
-1. **Install dependencies**
-```bash
-pip install -r requirements.txt
-Add your OpenWeatherMap API key
-
-Option 1: Replace YOUR_API_KEY directly in app.py
-
-Option 2 (recommended): Create a .env file in the project folder with:
-
-text
-Copy
-Edit
-API_KEY=your_api_key_here
+Follow these steps to set up and run the Live Air Quality Tracker locally.
 
 ---
 
-## 🏃 Running the App
-
-Run the following command in your terminal:
-
+### 1️⃣ Clone the repository
 ```bash
+git clone https://github.com/PranavKekunnaya/Live-Air-Quality-Tracker---West-Lafayette.git
+cd Live-Air-Quality-Tracker---West-Lafayette
+
+---
+
+### 2️⃣ Create a virtual environment
+
+python -m venv venv
+
+### 3️⃣ Activate the virtual environment
+
+PowerShell: .\venv\Scripts\Activate.ps1
+If blocked by PowerShell, run once: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Command Prompt: .\venv\Scripts\activate.bat
+
+### 4️⃣ Install dependencies:
+
+pip install streamlit requests pandas plotly python-dotenv
+
+### 5️⃣ Create a .env file
+
+In the project root, create a file named .env with your OpenWeatherMap API key:
+
+API_KEY=your_openweathermap_api_key_here
+
+### 6️⃣ Run the app
 streamlit run app.py
+
+And your all set now!
+
