@@ -1,15 +1,15 @@
 # 🌬 Live Air Quality Tracker – West Lafayette
 
-A Streamlit dashboard that fetches **real-time air quality data** from the **OpenWeatherMap API**, displays AQI ratings, pollutant concentrations, and interactive charts. Built with Python, Pandas, and Plotly for clear, visual monitoring of air quality in West Lafayette, IN.
+A Streamlit dashboard that fetches real-time air quality data from the OpenWeatherMap API, displays AQI ratings, pollutant concentrations, and interactive charts. Built with Python, Pandas, and Plotly for clear, visual monitoring of air quality in West Lafayette, IN.
 
 ---
 
 ## 📊 Features
 
-- Fetch live **AQI** (Air Quality Index) and pollutant levels (SO₂, NO₂, PM10, PM2.5, O₃, CO)  
-- Display **qualitative AQI categories**: Good, Fair, Moderate, Poor, Very Poor  
-- Interactive **bar chart** visualization of pollutant concentrations  
-- Easy-to-run **Streamlit dashboard**
+- Fetch live AQI (Air Quality Index) and pollutant levels (SO₂, NO₂, PM10, PM2.5, O₃, CO).  
+- Display qualitative AQI categories: Good, Fair, Moderate, Poor, Very Poor.  
+- Interactive bar chart visualization of pollutant concentrations.  
+- Easy-to-run Streamlit dashboard.
 
 ---
 
@@ -25,88 +25,60 @@ A Streamlit dashboard that fetches **real-time air quality data** from the **Ope
 
 ---
 
-## 🚀 Installation & Running the App (Windows)
+## 🚀 Installation & Running the App
 
-Follow these steps to set up and run the Live Air Quality Tracker locally.
+### Windows
 
----
-
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/PranavKekunnaya/Live-Air-Quality-Tracker---West-Lafayette.git
-cd Live-Air-Quality-Tracker---West-Lafayette
-
----
-
-### 2️⃣ Create a virtual environment
-
+1️⃣ Create a virtual environment:
 python -m venv venv
 
-### 3️⃣ Activate the virtual environment
-
-PowerShell: .\venv\Scripts\Activate.ps1
-If blocked by PowerShell, run once: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+2️⃣ Activate the virtual environment:  
+PowerShell: .\venv\Scripts\Activate.ps1  
+If blocked, run once: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser  
 Command Prompt: .\venv\Scripts\activate.bat
 
-### 4️⃣ Install dependencies:
-
+3️⃣ Install dependencies:
+pip install -r requirements.txt  
+If requirements.txt is missing:
 pip install streamlit requests pandas plotly python-dotenv
 
-### 5️⃣ Create a .env file
-
-In the project root, create a file named .env with your OpenWeatherMap API key:
-
+4️⃣ Create a `.env` file in the project root:
 API_KEY=your_openweathermap_api_key_here
 
-### 6️⃣ Run the app
+5️⃣ Run the app:
 streamlit run app.py
 
-And your all set now!
-
-**## 🚀 Installation & Running the App (Mac / Linux)**
-
-Follow these steps to set up and run the Live Air Quality Tracker locally on Mac or Linux.
+Your browser should open at http://localhost:8501 displaying the live AQI dashboard.
 
 ---
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/PranavKekunnaya/Live-Air-Quality-Tracker---West-Lafayette.git
+### Mac / Linux
+
+1️⃣ Clone the repository:
+git clone https://github.com/PranavKekunnaya/Live-Air-Quality-Tracker---West-Lafayette.git  
 cd Live-Air-Quality-Tracker---West-Lafayette
-2️⃣ Create a virtual environment
-bash
-Copy
-Edit
+
+2️⃣ Create a virtual environment:
 python3 -m venv venv
-3️⃣ Activate the virtual environment
-bash
-Copy
-Edit
+
+3️⃣ Activate the virtual environment:
 source venv/bin/activate
-You should see (venv) in your terminal prompt.
 
-4️⃣ Install dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
+4️⃣ Install dependencies:
+pip install -r requirements.txt  
 If requirements.txt is missing:
-
-bash
-Copy
-Edit
 pip install streamlit requests pandas plotly python-dotenv
-5️⃣ Create a .env file
-In the project root, create a file named .env with your OpenWeatherMap API key:
 
-ini
-Copy
-Edit
+5️⃣ Create a `.env` file in the project root:
 API_KEY=your_openweathermap_api_key_here
-6️⃣ Run the app
-bash
-Copy
-Edit
-streamlit run app.py
-Your default browser should open at http://localhost:8501 displaying the live AQI dashboard.
 
+6️⃣ Run the app:
+streamlit run app.py
+
+Your browser should open at http://localhost:8501 displaying the dashboard.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
