@@ -63,3 +63,50 @@ streamlit run app.py
 
 And your all set now!
 
+**## 🚀 Installation & Running the App (Mac / Linux)**
+
+Follow these steps to set up and run the Live Air Quality Tracker locally on Mac or Linux.
+
+---
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/PranavKekunnaya/Live-Air-Quality-Tracker---West-Lafayette.git
+cd Live-Air-Quality-Tracker---West-Lafayette
+2️⃣ Create a virtual environment
+bash
+Copy
+Edit
+python3 -m venv venv
+3️⃣ Activate the virtual environment
+bash
+Copy
+Edit
+source venv/bin/activate
+You should see (venv) in your terminal prompt.
+
+4️⃣ Install dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+If requirements.txt is missing:
+
+bash
+Copy
+Edit
+pip install streamlit requests pandas plotly python-dotenv
+5️⃣ Create a .env file
+In the project root, create a file named .env with your OpenWeatherMap API key:
+
+ini
+Copy
+Edit
+API_KEY=your_openweathermap_api_key_here
+6️⃣ Run the app
+bash
+Copy
+Edit
+streamlit run app.py
+Your default browser should open at http://localhost:8501 displaying the live AQI dashboard.
+
