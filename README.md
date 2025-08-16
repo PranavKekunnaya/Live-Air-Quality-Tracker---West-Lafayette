@@ -38,8 +38,6 @@ If blocked, run once: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope C
 Command Prompt: .\venv\Scripts\activate.bat
 
 3️⃣ Install dependencies:
-pip install -r requirements.txt  
-If requirements.txt is missing:
 pip install streamlit requests pandas plotly python-dotenv
 
 4️⃣ Create a `.env` file in the project root:
@@ -65,8 +63,6 @@ python3 -m venv venv
 source venv/bin/activate
 
 4️⃣ Install dependencies:
-pip install -r requirements.txt  
-If requirements.txt is missing:
 pip install streamlit requests pandas plotly python-dotenv
 
 5️⃣ Create a `.env` file in the project root:
